@@ -5,8 +5,8 @@ import { toAbsolute } from '../lib/urls';
 export async function GET(context) {
   const posts = await getCollection('blog');
   return rss({
-    title: 'OpenClaw Blog Live Example',
-    description: 'Astro + GitHub Pages demo with RSS feed',
+    title: 'Sutra Sutra',
+    description: 'Sutra Sutra RSS feed',
     site: toAbsolute('', context.site),
     items: posts.map((post) => {
       const slug = post.id.replace(/\.md$/, '');
