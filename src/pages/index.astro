@@ -15,7 +15,6 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags ?? []))].sort
   description="Sutra Sutra blog with article list, tags, RSS and sitemap."
 >
   <h1>Sutra Sutra</h1>
-  <p class="meta">GitHub Pages + Astro + RSS</p>
 
   <p>
     <a href={withBase('rss.xml')}>訂閱 RSS</a>
