@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://trapsesoul.github.io',
-  base: '/openclaw-blog-live-example',
+  base: '/sutra-sutra',
   output: 'static',
   integrations: [sitemap()]
 });

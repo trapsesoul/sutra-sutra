@@ -1,4 +1,4 @@
-# openclaw-blog-live-example
+# sutra-sutra
 
 Astro + GitHub Pages 的最小可用部落格範例（含文章列表、Tags、RSS、Sitemap）。
 
