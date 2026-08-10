@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
+---
+
+<BaseLayout
+  title="啜・飲水追蹤｜隱私權政策"
+  description="啜・飲水追蹤（Sip）的隱私權政策與資料使用說明。"
+>
+  <main>
+    <p><a href={withBase('sip/support/')}>前往 App 支援頁</a></p>
+
+    <h1>啜・飲水追蹤 隱私權政策</h1>
+    <p class="meta">最後更新：2026 年 8 月 11 日</p>
+
+    <p>
+      「啜・飲水追蹤」（以下簡稱「本 App」，英文名稱 Sip）重視你的隱私。
+      本 App 不要求建立帳號、不含廣告，也沒有開發者自營的遠端伺服器或分析追蹤服務。
+    </p>
+
+    <h2>本 App 處理的資料</h2>
+    <ul>
+      <li><strong>飲水紀錄與偏好：</strong>預設保存在你的裝置上，用於計算每日進度、提醒與顯示使用紀錄。</li>
+      <li><strong>Apple Health 資料：</strong>只有在你明確授權後，本 App 才會讀取或寫入飲水量。你可以隨時在 iPhone 的「健康」或「設定」中變更權限。</li>
+      <li><strong>私人 iCloud 資料：</strong>若你已登入 iCloud，本 App 會透過 Apple CloudKit 的私人資料庫同步水晶養成狀態與每日結算資料，以支援重新安裝後復原。飲水紀錄與 Apple Health 原始資料不會上傳至此 CloudKit 紀錄。</li>
+      <li><strong>Apple Watch 與小工具：</strong>必要的 App 狀態會透過 Apple 提供的裝置通訊與 App Group 機制，在你自己的裝置間共享。</li>
+    </ul>
+
+    <h2>資料使用目的</h2>
+    <p>上述資料只用於提供飲水記錄、進度計算、提醒、Apple Health 整合、Apple Watch 功能、水晶養成與跨安裝復原，不用於廣告、使用者追蹤或資料販售。</p>
+
+    <h2>第三方服務</h2>
+    <p>
+      本 App 使用 Apple 提供的 HealthKit、CloudKit、WatchConnectivity、通知與 App Group 等系統服務。
+      Apple 對相關資料的處理受其隱私權政策與服務條款規範。
+    </p>
+
+    <h2>資料控制與刪除</h2>
+    <ul>
+      <li>你可以在 App 內刪除由本 App 建立的飲水紀錄。</li>
+      <li>你可以在 Apple Health 中檢視或刪除本 App 寫入的資料，並撤銷健康權限。</li>
+      <li>刪除 App 會移除裝置上的本機資料；私人 CloudKit 資料可能依你的 iCloud 設定保留，以提供復原功能。</li>
+    </ul>
+
+    <h2>兒童隱私</h2>
+    <p>本 App 不會刻意蒐集兒童的個人資料，也不提供社交、廣告或公開分享功能。</p>
+
+    <h2>政策更新</h2>
+    <p>若本 App 的資料處理方式有重大變更，本頁將更新內容與日期。</p>
+
+    <h2>聯絡方式</h2>
+    <p>若你對隱私或資料處理有疑問，請寄信至 <a href="mailto:trapsesoul@gmail.com">trapsesoul@gmail.com</a>。</p>
+  </main>
+</BaseLayout>
+
+<style>
+  main { padding-bottom: 48px; }
+  h1 { line-height: 1.25; }
+  h2 { margin-top: 2rem; line-height: 1.35; }
+  li + li { margin-top: 0.65rem; }
+</style>

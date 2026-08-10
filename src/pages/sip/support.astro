@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/urls';
+---
+
+<BaseLayout
+  title="啜・飲水追蹤｜App 支援"
+  description="啜・飲水追蹤（Sip）的使用說明、疑難排解與聯絡方式。"
+>
+  <main>
+    <p><a href={withBase('sip/privacy/')}>查看隱私權政策</a></p>
+
+    <h1>啜・飲水追蹤 App 支援</h1>
+    <p class="lead">用一口一口的節奏記錄飲水，搭配 Apple Watch、Apple Health 與水晶養成，建立更穩定的日常習慣。</p>
+
+    <h2>系統需求</h2>
+    <ul>
+      <li>iPhone：iOS 16 或更新版本</li>
+      <li>Apple Watch：watchOS 8.7 或更新版本</li>
+      <li>Apple Health 與 iCloud 同步皆為選用功能；拒絕權限時仍可使用本機飲水記錄。</li>
+    </ul>
+
+    <h2>常見問題</h2>
+
+    <h3>Apple Watch 沒有立刻顯示最新紀錄</h3>
+    <p>請確認 iPhone 與 Apple Watch 已連線，並分別開啟一次 App。watchOS 的背景同步時間由系統決定，必要時可在 App 內新增一筆紀錄以觸發同步。</p>
+
+    <h3>Apple Health 沒有同步</h3>
+    <p>請到 iPhone「設定」或「健康」App 檢查「啜」的飲水讀取與寫入權限。若未授權，本 App 仍會正常保存本機紀錄。</p>
+
+    <h3>提醒沒有出現</h3>
+    <p>請到 iPhone「設定 → 通知 → 啜」確認允許通知。當 iPhone 鎖定且 Apple Watch 正在佩戴並解鎖時，提醒通常會顯示在手錶上。</p>
+
+    <h3>重新安裝後如何恢復水晶狀態</h3>
+    <p>請確認裝置已登入原本的 iCloud 帳號，並允許 iCloud Drive。私人 CloudKit 同步可能需要短暫時間完成。</p>
+
+    <h2>聯絡支援</h2>
+    <p>
+      若問題仍未解決，請寄信至
+      <a href="mailto:trapsesoul@gmail.com?subject=Sip%20App%20Support">trapsesoul@gmail.com</a>，
+      並附上 iPhone／Apple Watch 型號、系統版本、App 版本與問題描述。請勿寄送健康資料或其他敏感資訊。
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  main { padding-bottom: 48px; }
+  h1 { line-height: 1.25; }
+  h2 { margin-top: 2rem; line-height: 1.35; }
+  h3 { margin-top: 1.4rem; margin-bottom: 0.35rem; line-height: 1.4; }
+  .lead { font-size: 1.08rem; color: #374151; }
+  li + li { margin-top: 0.45rem; }
+</style>
