@@ -4,18 +4,18 @@ import { withBase } from '../../lib/urls';
 ---
 
 <BaseLayout
-  title="啜・飲水追蹤｜隱私權政策"
-  description="啜・飲水追蹤（Sip）的隱私權政策與資料使用說明。"
+  title="水晶啜 / Crystal Sip｜隱私權政策"
+  description="水晶啜 / Crystal Sip（Crystal Sip）的隱私權政策與資料使用說明。"
 >
   <main>
     <p><a href={withBase('sip/support/')}>前往 App 支援頁</a></p>
 
-    <h1>啜・飲水追蹤 隱私權政策</h1>
-    <p class="meta">最後更新：2026 年 8 月 11 日</p>
+    <h1>水晶啜 / Crystal Sip 隱私權政策</h1>
+    <p class="meta">最後更新：2026 年 9 月 25 日</p>
 
     <p>
-      「啜・飲水追蹤」（以下簡稱「本 App」，英文名稱 Sip）重視你的隱私。
-      本 App 不要求建立帳號、不含廣告，也沒有開發者自營的遠端伺服器或分析追蹤服務。
+      「水晶啜 / Crystal Sip」（以下簡稱「本 App」，英文名稱 Crystal Sip）重視你的隱私。
+      本 App 不要求建立帳號、不含廣告，不使用廣告追蹤。選購花園工坊時，Apple 與 RevenueCat 會處理完成交易及恢復購買所需的資料。
     </p>
 
     <h2>本 App 處理的資料</h2>
@@ -35,12 +35,16 @@ import { withBase } from '../../lib/urls';
       Apple 對相關資料的處理受其隱私權政策與服務條款規範。
     </p>
 
+    <p>花園工坊使用 <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> 管理購買權益。其 SDK 使用匿名 App 使用者識別碼，並處理購買／收據／交易資訊、產品與權益狀態，以及提供服務所需的 App、裝置與連線技術資料。用途是驗證購買、提供已購功能、恢復購買及排查交易問題；不是廣告追蹤。本 App 不把飲水紀錄或 HealthKit 資料傳給 RevenueCat。付款由 Apple 處理；我們不取得你的信用卡號碼。</p>
+
     <h2>資料控制與刪除</h2>
     <ul>
       <li>你可以在 App 內刪除由本 App 建立的飲水紀錄。</li>
       <li>你可以在 Apple Health 中檢視或刪除本 App 寫入的資料，並撤銷健康權限。</li>
       <li>刪除 App 會移除裝置上的本機資料；私人 CloudKit 資料可能依你的 iCloud 設定保留，以提供復原功能。</li>
     </ul>
+
+    <p>刪除 App 不會撤銷 Apple 已完成的交易，也不一定立即刪除 Apple／RevenueCat 為恢復購買、會計或法律義務保留的交易紀錄。如需協助處理購買資料或刪除請求，請使用下方聯絡方式；請勿寄送健康資料、密碼或完整付款資訊。</p>
 
     <h2>兒童隱私</h2>
     <p>本 App 不會刻意蒐集兒童的個人資料，也不提供社交、廣告或公開分享功能。</p>
@@ -50,6 +54,18 @@ import { withBase } from '../../lib/urls';
 
     <h2>聯絡方式</h2>
     <p>若你對隱私或資料處理有疑問，請寄信至 <a href="mailto:trapsesoul@gmail.com">trapsesoul@gmail.com</a>。</p>
+    <hr />
+    <section lang="en">
+      <h2>Privacy Policy — English</h2>
+      <p>Updated September 25, 2026. Crystal Sip requires no app account and contains no ads or advertising tracking.</p>
+      <h3>Hydration, Health and iCloud</h3>
+      <p>Hydration records and preferences are stored on your devices. Apple Health is read or written only with your permission. Optional private CloudKit sync preserves crystal state, garden arrangement and reward records, not raw hydration or HealthKit samples. Apple Watch and widgets share necessary app state through Apple's device communication and App Group services.</p>
+      <h3>Purchases and RevenueCat</h3>
+      <p>Apple processes payment for the optional one-time Garden Atelier purchase. RevenueCat manages purchase entitlements using an anonymous app user identifier, purchase/receipt/transaction information, product and entitlement status, and app, device and connection technical information needed to provide the service. These data support purchase validation, feature access, restoration and troubleshooting, not advertising tracking. Crystal Sip does not send hydration or HealthKit data to RevenueCat. We do not receive your payment-card number. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a>.</p>
+      <h3>Your choices</h3>
+      <p>You may deny or revoke Health permission, delete app-created hydration records, and manage Health and iCloud data through Apple settings. Deleting the app removes local data, but private iCloud records may remain for recovery. Apple or RevenueCat may retain transaction records needed for restoration, accounting or legal obligations. For purchase-data or deletion requests, contact trapsesoul@gmail.com; do not send health records, passwords or full payment information.</p>
+      <p>We do not sell hydration data, provide social sharing, or knowingly seek children's personal information. This policy will be updated when our data practices change.</p>
+    </section>
   </main>
 </BaseLayout>
 
